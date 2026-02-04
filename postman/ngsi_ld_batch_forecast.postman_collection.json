@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "NGSI-LD Batch Forecast",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Send Batch Forecast",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{NGSI_API_KEY}}"
+          }
+        ],
+        "body": {
+          "mode": "file",
+          "file": {
+            "src": "payload.json"
+          }
+        },
+        "url": {
+          "raw": "{{NGSI_URL}}/ngsi-ld/batch_forecast",
+          "host": [
+            "{{NGSI_URL}}"
+          ],
+          "path": [
+            "ngsi-ld",
+            "batch_forecast"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "NGSI_URL",
+      "value": "http://localhost:9013"
+    },
+    {
+      "key": "NGSI_API_KEY",
+      "value": "mykey2023"
+    }
+  ]
+}

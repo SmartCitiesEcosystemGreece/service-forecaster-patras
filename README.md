@@ -34,6 +34,9 @@ Install locally:
 ```bash
 pip install -r requirements.txt
 ```
+### Tutorial
+
+A step-by-step tutorial for using and integrating this NGSI-LD Batch Forecast API is available here: https://github.com/Skorpinakos/ISC2-2025-Patras-Tutorial
 
 ## Configuration
 
